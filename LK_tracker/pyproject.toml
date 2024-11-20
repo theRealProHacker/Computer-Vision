@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lk-tracker"
+version = "0.1.0"
+description = ""
+authors = ["Tim Landgraf <tim.landgraf@fu-berlin.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+opencv-python = "^4.10.0.84"
+opencv-contrib-python = "^4.10.0.84"
+matplotlib = "^3.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
