@@ -3,3 +3,5 @@ scikit-image
 numpy
 tqdm
 opencv-python
+torch
+torchvision
