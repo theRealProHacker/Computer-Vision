@@ -5,3 +5,5 @@ tqdm
 opencv-python
 torch
 torchvision
+ipykernel
+# notebook

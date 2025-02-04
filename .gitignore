@@ -1,3 +1,5 @@
 venv
 taco_binary
 cocoapi
+__pycache__
+model

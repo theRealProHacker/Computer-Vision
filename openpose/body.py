@@ -19,7 +19,7 @@ class Body(object):
         self.model.load_state_dict(model_dict)
         self.model.eval()
 
-    def __call__(self, oriImg):
+    def __call__(self, oriImg, return_pcm_paf=False):
         # scale_search = [0.5, 1.0, 1.5, 2.0]
         scale_search = [0.5]
         boxsize = 368
@@ -204,6 +204,8 @@ class Body(object):
 
         # subset: n*20 array, 0-17 is the index in candidate, 18 is the total score, 19 is the total parts
         # candidate: x, y, score, id
+        if return_pcm_paf:
+            return candidate, subset, heatmap, paf
         return candidate, subset
 
 if __name__ == "__main__":
